@@ -1,0 +1,13 @@
+@use "../custom" as *;
+
+.btnBack {
+  float: right;
+}
+.btnBackAlone {
+  text-align: right;
+}
+.btnMargin {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+}

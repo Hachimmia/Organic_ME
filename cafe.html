@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/graphics/logo2-SilviaFigliozzi.png">
+    <title>Organic ME</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="left-body"></div>
+  <div id="right-body"></div>
+  <div id="body">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-primary shadow">
+      <div class="container">
+        <a class="navbar-brand imageLogo" href="index.html"><img class="logo" src="images/graphics/logo2-SilviaFigliozzi.png"  alt="logo image"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end menu" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="cafe.html">Café<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="container-center">
+      <br>
+      <br>
+      <br> 
+      <!--carousel-->
+      <div class="container pt-3">
+        <div class="overlay">
+          <h1 class="mobile-version-carousel">Café</h1>
+          <img src="images/intro-page/intro-cafe-mobile.jpg" alt="intro-cafe" class="img-fluid img-intro-mobile-carousel border-R shadow">
+          <p class="intro-description-home"> Enjoy your time at the Organic ME café! We have everything to accommodate you: free wi-fi, covered heating space dog friendly to eat outside and a kid zone where they can enjoy the time they spend at the café. All the products they made in the kitchen is served, such as homemade soups, sandwiches, pies, cakes, bread - everything using organic and local raw material as the concept at Organic ME.
+          </p>
+        </div>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/intro-page/cafe-intro1.jpg" alt="intro-img1" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/intro-page/cafe-intro2.jpg" alt="intro-img2" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+              <img src="images/intro-page/cafe-intro3.jpg" alt="intro-img3" class="d-block w-100">
+            </div>
+          </div>
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <!--menu-->
+      <div class="margin-top-mobile-cafe"></div>
+      <div class="subheader subheader-menu">
+        <span class="leaves leaves-menu">
+          <img src="images/graphics/LeftPurpleBranches.png" alt="leaves">
+        </span>
+        <h2>Organic ME Menu</h2>
+        <span class="leaves leaves-menu">
+          <img src="images/graphics/RightPurpleBranches.png" alt="leaves">
+        </span>
+      </div>
+      <div class="container">
+        <div class="center-align">
+          <div class="oneRow menuCafe">
+            <a id="breakfastButton" onclick="enableBreakfast()">Breakfast</a> |
+            <a id="lunchMenuButton" onclick="enableLunch()">Lunch</a> |
+            <a id="drinksMenuButton" onclick="enableDrinks()">Drinks</a>
+          </div>
+          <div id="breakfastMenu">
+            <div class="pt-3">
+              <p class="menuFood"><b>Summer Berry Granola £4.95 </b>- Mixed Berries & chunky oats, nuts & seeds with fresh yoghurt & honey<br><br>
+                <b>Kimchi Chilli Scramble £9.50 </b>- Scrambled eggs, with house-made Kimchi, crispy leeks, coriander, black sesame, miso & garlic aioli add Puddledub smoked bacon £2<br><br>
+                <b>Eggs How You Like £5.95 </b>- Two Corrie Mains Farm free range eggs scrambled or poached on company bakery sourdoug<br><br>
+                <b>Toast Stack £3.95 </b>- Company bakery sourdough, rye or fruit toast with a choice of two Edinburgh butter, honey, peanut butter, vegemite, nutella, Scottish seasonal jam or marmalade<br><br>
+                <b>Cake of the Day (Slice) £1.50</b><br><br>
+                <b>Muffin of the Day £1.50</b><br><br>
+                <b>Scone of the Day with Jam and Butter £1.50</b>
+
+                </p>
+            </div>
+          </div>
+          <div id="lunchMenu">
+            <div class="pt-3">
+              <p class="menuFood"><b>Smoked Haddock Omelette £9.95 </b>- 3 egg omelette with Scottish smoked haddock, smoked cheddar sauce & pea shoots<br><br>
+                Ostara Benedict Two free range poached eggs & spinach topped with hollandaise, served on sourdough: <br><br>
+                <b>• Pastrami, pickles & charred leeks £9.95</b> <br><br>
+                <b>• Haggis & crispy neeps £8.95</b><br><br>
+                <b>• Tobermory trout, crowdie and pickled cucumber £10.95</b><br><br>
+                <b>Summer Veg Smash £8.95 </b>- Roast tomato, aubergine, red pepper & courgette with garlic hummus & basil on sourdough <br><br>
+                <b>Scottish Smoked Fish Plate £12.95 </b>- Tobermory trout, smoked mackerel pate, soft boiled egg, pickled cucumber, crowdie, beetroot & rye toast and oatcakes <br><br>
+                <b>Scottish Cheese & Charcuterie £11.95 </b>- A selection of Scottish cheese & charcuterie with pickled egg, oatcakes and sourdough toast
+                </p>
+            </div>
+          </div>
+          <div id="drinksMenu">
+            <div class="pt-3">
+              <p class="menuFood"><b>Filter Coffee £1.50</b><br><br>
+                <b>Americano £2.25</b><br><br>
+                <b>Cappuccino £2.70</b><br><br>
+                <b>Latte £2.70</b><br><br>
+                <b>Flat White £2.50</b><br><br>
+                <b>Espresso (double) £1.50</b><br><br>
+                <b>Macchiato (double) £1.70</b><br><br>
+                <b>Mocha £2.90</b><br><br>
+                <b>Hot Chocolate £3.00</b><br><br>
+                <b>Chai Latte £2.70</b><br><br>
+                <b>Tea £2.10</b><br><br>
+                <b>ONE Sparkling Water £2.00</b><br><br>
+                <b>ONE Juiced Water £1.80</b><br><br>
+                <b>Orange and Mango - Lemon and Lime - Cloudy Apple</b><br><br>
+                (Skinny, Soy and Almond Milk Available)
+                </p>
+            </div>
+          </div>
+          <br>
+          <p>We source our food responsibly, supporting small local food producers and suppliers. Organic, local and sustainable produce will feature across the menu, changing slightly depending on season and what our local farms and suppliers have available. More info about some products that we sell: <a style="text-decoration:underline; color:#86a614;" href="https://onewater.org.uk/products/one-water-sparkling/" target="_blank">ONE</a> is a company committed to providing life's essentials to communities across Africa and <a style="text-decoration:underline; color:#86a614;" href="https://www.deargreencoffee.com/" target="_blank">Dear Green Coffee</a> is the coffee that we use. </p>
+        </div>
+      </div>
+      <br>
+      <script>
+        function enableBreakfast() {
+          var btnx = document.getElementById("breakfastButton");
+          var btny = document.getElementById("lunchMenuButton");
+          var btnz = document.getElementById("drinksMenuButton");
+          var x = document.getElementById("breakfastMenu");
+          var y = document.getElementById("lunchMenu");
+          var z = document.getElementById("drinksMenu");
+
+          x.style.display = "block";
+          y.style.display = "none";
+          z.style.display = "none";
+          btnx.style.color = "purple";
+          btny.style.color = "black";
+          btnz.style.color = "black";
+        }
+
+        function enableLunch() {
+          var btnx = document.getElementById("breakfastButton");
+          var btny = document.getElementById("lunchMenuButton");
+          var btnz = document.getElementById("drinksMenuButton");
+          var x = document.getElementById("breakfastMenu");
+          var y = document.getElementById("lunchMenu");
+          var z = document.getElementById("drinksMenu");
+
+          x.style.display = "none";
+          y.style.display = "block";
+          z.style.display = "none";
+          btnx.style.color = "black";
+          btny.style.color = "purple";
+          btnz.style.color = "black";
+        }
+        function enableDrinks() {
+          var btn = document.getElementById("breakfastButton");
+          var btny = document.getElementById("lunchMenuButton");
+          var btnz = document.getElementById("drinksMenuButton");
+          var x = document.getElementById("breakfastMenu");
+          var y = document.getElementById("lunchMenu");
+          var z = document.getElementById("drinksMenu");
+
+          x.style.display = "none";
+          y.style.display = "none";
+          z.style.display = "block";
+          btn.style.color = "black";
+          btny.style.color = "black";
+          btnz.style.color = "purple";
+        }
+
+        enableBreakfast();
+      </script> 
+      <!--Loyalty card-->
+      <div class="container">
+        <div class="text-img">
+          <h1 class="loyalty-title">Coffee Loyalty Card</h1>
+          <span class="left-img">           
+            <br>
+            <img src="images/middle-page/loyaltycard.jpg" alt="loyalty card" class="shadow event-img-index border-R">
+          </span>
+          <br>
+          <p class="text-descr"><b>Buy 8 drinks to get 1 free! </b><br>It is valid for any drink and any size. We are very happy to reward our regular customers. Come to visit us and enjoy your free drink!  </p>  
+        </div>
+      </div>
+      <!--newsletter-->
+      <div class="subheader">
+        <span class="leaves">
+          <img src="images/graphics/LeftPurpleBranches.png" alt="leaves">
+        </span>
+        <h2>Newsletter</h2>
+        <span class="leaves">
+          <img src="images/graphics/RightPurpleBranches.png" alt="leaves">
+        </span>
+      </div>
+      <section class="home-newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="single">
+                <p>Sign up to our email newsletter for up to <b>10% off</b> to use at our café and shop. In addition, you are up to date on the events that we organise throughout the year and on our special monthly offers.</p>
+                <br>
+                <form class="input-group" name="Newsletter" method="post" data-netlify="true">
+                  <input type="email" class="form-control" name="Email" required placeholder="Enter your email">
+                  <span class="input-group-btn">
+                    <button class="btn btn-theme" type="submit">Sign Up</button>
+                  </span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container btnBackAlone">   
+        <button class="btn btn-outline-success btnMargin" onclick="location.href='#'">Go Back</button>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted footer">
+    <!-- Section: Links  -->
+    <section class="border-bottom">
+    </section>
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Opening Hours
+          </h6>
+          <p>Monday    10:00am - 4:00pm<br>
+            Tuesday    10:00am - 4:00pm<br>
+            Wednesday  10:00am - 4:00pm<br>
+            Thuesday   10:00am - 4:00pm<br>
+            Friday     10:00am - 4:00pm<br>
+            Saturday   10:00am - 4:00pm<br>
+            Sunday     12:00pm - 4:00pm<br>              
+          </p> 
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Our Company</h6>
+          <p>
+            <a href="aboutUs.html" class="text-reset">About Us</a>
+          </p>
+          <p>
+            <a href="aboutUs.html" class="text-reset">Our Values</a>
+          </p>
+          <p>
+            <a href="contactUs.html" class="text-reset">Contact Us</a>
+          </p>
+          <p>
+            <a href="events.html" class="text-reset">Events</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <div class=" text-uppercase fw-bold" >
+            <a href="https://www.facebook.com/">
+              <img src="images/graphics/FbLogo.png" alt="Facebook" style="width: 60px; height: auto;"> 
+            </a>
+            <a href="https://www.instagram.com/">
+              <img  src="images/graphics/IgLogo.png" alt="Instagram" style="width: 80px; height: auto;"> 
+            </a>
+            <a href="https://www.twitter.com/">
+              <img src="images/graphics/TwLogo.png" alt="Twitter" style="width: 70px; height: auto;"> 
+            </a>
+          </div>
+          <br>
+          <p>
+            <i class="fas fa-home me-3"></i>
+            High St, Kelso TD5 8SA, UK</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            organic.me.kelso@gmail.com
+          </p>
+          <p>
+            <i class="fas fa-phone me-3"></i>
+            + 01 573 567 
+          </p>
+        </div> 
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright Silvia Figliozzi
+    </div>
+  </footer>
+  
+
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

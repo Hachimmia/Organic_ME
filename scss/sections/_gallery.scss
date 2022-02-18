@@ -1,0 +1,45 @@
+@use "../custom" as *;
+
+.center-align {
+  text-align: center;
+}
+.firstRow {
+  width: 500px;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+}
+@media screen and (max-width: 600px) {
+  .firstRow,
+  .secondRow {
+    padding-right: 50px;
+  }
+}
+.secondRow {
+  width: 700px;
+  height: 350px;
+  margin: 20px 20px 20px 20px;
+}
+.thirdRow {
+  width: 300px;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+}
+.oneRow {
+  display: inline-block;
+}
+.squareImg {
+  width: 300px;
+  height: auto;
+  margin: -200px 20px 20px 20px;
+  display: inline-block;
+}
+@media screen and (max-width: 1006px) {
+  .squareImg {
+    margin: 20px 20px 20px 20px;
+  }
+}
+@media screen and (max-width: 1006px) and (min-width: 662px) {
+  .aboutus-column {
+    padding: 0px 150px;
+  }
+}

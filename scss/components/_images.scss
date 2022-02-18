@@ -1,0 +1,150 @@
+@use "../custom" as *;
+.border-R {
+  border-radius: 20px;
+}
+.left-img {
+  width: 450px;
+  height: auto;
+  position: relative;
+  float: left;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 390px) {
+  //mobile mode
+  .left-img {
+    width: 100px;
+    height: auto;
+    margin-left: 0px;
+  }
+}
+.shop-img {
+  width: 300px;
+  height: 300px;
+}
+.course-img {
+  width: 450px;
+  height: auto;
+}
+@media screen and (max-width: 998px) {
+  .course-img {
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .course-img {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 541px) {
+  .course-img {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .course-img {
+    width: 300px;
+    height: auto;
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  //mobile mode
+  .course-img {
+    width: 250px;
+    height: auto;
+    margin-left: 50px;
+  }
+}
+.event-img-index {
+  width: 450px;
+  height: auto;
+}
+
+@media screen and (max-width: 541px) {
+  .event-img-index {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .event-img-index {
+    width: 300px;
+    height: auto;
+    margin-left: -30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  //mobile mode
+  .event-img-index {
+    width: 250px;
+    height: auto;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .maps {
+    width: 400px;
+    height: 300px;
+    margin-left: -150px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .maps {
+    width: 400px;
+    height: 300px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .maps {
+    width: 300px;
+    height: 200px;
+    margin-right: 90px;
+    margin-left: -250px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .maps {
+    width: 300px;
+    height: 200px;
+    margin-right: 90px;
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .offer-img {
+    width: 400px;
+    margin-left: -50px;
+    margin-right: 500px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .offer-img {
+    width: 350px;
+    margin-left: -70px;
+    margin-right: 700px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .offer-img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .offer-img {
+    margin-left: -110px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .offer-img {
+    width: 300px;
+    display: block;
+    margin-left: -50px;
+  }
+}

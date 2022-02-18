@@ -1,0 +1,81 @@
+@use "../custom" as *;
+
+body {
+  position: relative;
+}
+
+#body {
+  //margin: 0 3vw;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+}
+
+#left-body,
+#right-body {
+  position: absolute;
+  width: 150px;
+  top: -50px;
+  bottom: 0;
+  z-index: 2;
+}
+
+#left-body {
+  left: 0;
+  background: url(/images/graphics/backgorund-left.png) top left repeat-y;
+  background-size: 150px;
+}
+
+#right-body {
+  right: 0;
+  background: url(/images/graphics/background-right.png) top right repeat-y;
+  background-size: 150px;
+}
+
+@media screen and (max-width: 1170px) {
+  #left-body {
+    background-size: 15vw;
+  }
+  #right-body {
+    background-size: 15vw;
+  }
+  #left-body,
+  #right-body {
+    width: 15vw;
+  }
+}
+
+.leaves img {
+  width: 80px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .leaves img {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .leaves-menu img {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 576px) {
+  //mobile mode
+  .leaves-course img {
+    width: 50px;
+  }
+}
+.bee {
+  float: right;
+  width: 500px;
+  height: auto;
+  margin-right: 200px;
+  margin-top: -50px;
+}
+@media screen and (max-width: 994px) {
+  .bee {
+    display: none;
+  }
+}

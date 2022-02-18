@@ -1,0 +1,6 @@
+@use "../custom" as *;
+
+.footer {
+  background-color: $primary !important;
+  z-index: 1;
+}

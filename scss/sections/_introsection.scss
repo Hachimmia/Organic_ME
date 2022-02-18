@@ -1,0 +1,247 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.carousel-item img {
+  height: 400px;
+}
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .carousel {
+    display: none;
+  }
+}
+.pt-3 {
+  position: relative;
+}
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  text-align: left;
+  word-wrap: break-word;
+  padding: 8% 0px 0px 8%;
+  width: 35vw;
+}
+@media screen and (max-width: 768px) {
+  .overlay {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overlay {
+    text-align: center;
+    margin-left: 50px;
+  }
+}
+.overlay2 {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  text-align: left;
+  word-wrap: break-word;
+  padding: 6% 0px 0px 13%;
+  width: 35vw;
+}
+@media screen and (max-width: 1400px) {
+  .overlay2 {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .overlay2 {
+    text-align: center;
+    width: 60vw;
+    margin: 0px 100px 100px 30px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .overlay2 {
+    text-align: center;
+    width: 80vw;
+    margin: 0px 100px 100px 0px;
+  }
+}
+.img-intro-mobile-carousel {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .img-intro-mobile-carousel {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.img-intro-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .img-intro-mobile {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.center-align-margin {
+  text-align: center;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+.intro-img {
+  width: 1150px;
+  height: auto;
+  margin: 20px 20px 20px 20px;
+}
+@media screen and (max-width: 1400px) {
+  .intro-img {
+    width: 1000px;
+    height: auto;
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .intro-img {
+    width: 900px;
+    height: 350px;
+    margin-left: -40px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .intro-img {
+    width: 700px;
+    height: 350px;
+    margin-left: -30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro-img {
+    display: none;
+  }
+}
+//shop page
+.text-intro-shop {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  color: black;
+  //float: left;
+  position: relative;
+  text-align: left;
+}
+@media screen and (max-width: 992px) {
+  .text-intro-shop {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .text-intro-shop {
+    font-family: "Dancing Script", cursive;
+    color: $info;
+  }
+}
+.desc-intro-shop {
+  font-family: "inter", sans-serif;
+  color: black;
+  font-size: 15px;
+  float: left;
+  position: relative;
+  margin-right: 25%;
+}
+@media screen and (max-width: 992px) {
+  .desc-intro-shop {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 0%;
+  }
+}
+.intros {
+  display: inline-block;
+}
+@media screen and (max-width: 992px) {
+  .intros {
+    display: block;
+  }
+}
+.oneRowShop {
+  display: inline-block;
+  margin: 50px 80px 50px 80px;
+}
+@media screen and (max-width: 768px) {
+  .oneRowShop {
+    margin: 50px 0px 50px 0px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .oneRowShop {
+    margin: 0px 0px 50px 0px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .oneRowShop {
+    margin: 0px 0px 50px -30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  //mobile
+  .oneRowShop {
+    margin: 0px 0px 50px -45px;
+  }
+}
+@media screen and (max-width: 450px) {
+  //mobile
+  .shop-mobile {
+    margin-right: 25%;
+  }
+}
+.video-yt-mobile {
+  display: none;
+}
+@media screen and (max-width: 450px) {
+  .video-yt-mobile {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: -30%;
+    width: 250px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .video-yt {
+    width: 350px;
+    height: 210px;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .video-yt {
+    width: 250px;
+    height: 160px;
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .video-yt {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .center-mobile {
+    text-align: center;
+    margin-left: 150px;
+  }
+}
+//about us page
+.text-aboutUs {
+  text-align: center;
+  display: inline-block;
+  width: 300px;
+}
+.centered {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}

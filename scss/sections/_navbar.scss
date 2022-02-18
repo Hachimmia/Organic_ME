@@ -1,0 +1,51 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+nav {
+  margin-top: 50px;
+  @include gradient;
+  border: 1px solid lightgray;
+}
+
+.menu {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  .active {
+    border: 2px solid $info;
+    border-radius: 20px;
+    background-color: $primary !important;
+    padding: auto;
+  }
+  li {
+    a {
+      color: $info !important;
+      text-transform: capitalize;
+      font-weight: 700;
+
+      border: 2px solid transparent;
+      transition: none;
+    }
+
+    a:hover {
+      border: 2px solid $info;
+      border-radius: 20px;
+      background-color: $primary !important;
+      padding: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    padding-top: 50px;
+  }
+}
+
+.logo {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 5px;
+}

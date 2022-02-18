@@ -1,0 +1,42 @@
+@use "../custom" as *;
+.menuFood {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+@media screen and (max-width: 1200px) {
+  .menuFood {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menuFood {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .menuFood {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+.menuCafe a {
+  margin-top: 20px;
+  color: black;
+  margin-bottom: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menuCafe a:hover {
+  color: #86a614 !important;
+}

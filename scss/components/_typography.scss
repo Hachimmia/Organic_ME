@@ -1,0 +1,54 @@
+@use "../custom" as *;
+
+h1,
+pre {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+h2 {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  color: $info;
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .mobile-version-carousel {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: $info;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  //mobile mode
+  .mobile-version {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: $info;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+}
+a {
+  text-decoration: none;
+}
+p,
+.intro-description-home {
+  font-family: "inter", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+p {
+  font-family: "inter", sans-serif;
+  color: black;
+}
+.font {
+  font-family: "inter", sans-serif;
+}

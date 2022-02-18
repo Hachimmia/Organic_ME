@@ -1,0 +1,53 @@
+@use "../custom" as *;
+
+.subheader {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.subheader h2 {
+  display: inline;
+  font-size: 60px;
+}
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .subheader h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 410px) {
+  //mobile mode
+  .subheader-menu h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  //mobile mode
+  .subheader-course h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .margin-top-mobile {
+    margin-top: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .margin-top-mobile-withImg {
+    margin-top: 550px;
+  }
+}
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .margin-top-mobile-home {
+    margin-top: 550px;
+  }
+}
+@media screen and (max-width: 450px) {
+  //mobile mode
+  .margin-top-mobile-cafe {
+    margin-top: 700px;
+  }
+}
