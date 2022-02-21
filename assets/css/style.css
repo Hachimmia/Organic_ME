@@ -11296,7 +11296,7 @@ h2 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .mobile-version-carousel {
     font-family: "Dancing Script", cursive;
     text-align: center;
@@ -11391,7 +11391,7 @@ body {
     width: 60px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 580px) {
   .leaves-menu img {
     width: 60px;
   }
@@ -11505,7 +11505,7 @@ nav {
   height: 400px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .carousel {
     display: none;
   }
@@ -11524,12 +11524,34 @@ nav {
   width: 35vw;
 }
 
+.overlay-cafe {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  text-align: left;
+  word-wrap: break-word;
+  padding: 8% 5% 0px 8%;
+  width: 40vw;
+}
+
+@media screen and (max-width: 900px) {
+  .overlay-cafe {
+    padding: 8% 0px 0px 8%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .overlay-cafe {
+    width: 60vw;
+    text-align: center;
+    margin-left: 50px;
+  }
+}
 @media screen and (max-width: 768px) {
   .overlay {
     width: 60vw;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .overlay {
     text-align: center;
     margin-left: 50px;
@@ -11568,7 +11590,7 @@ nav {
   display: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .img-intro-mobile-carousel {
     text-align: center;
     display: block;
@@ -11891,7 +11913,12 @@ nav {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 580px) {
+  .subheader-menu h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
   .subheader-menu h2 {
     font-size: 35px;
   }
@@ -11911,9 +11938,14 @@ nav {
     margin-top: 550px;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .margin-top-mobile-home {
     margin-top: 550px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .margin-top-mobile-cafe {
+    margin-top: 610px;
   }
 }
 @media screen and (max-width: 450px) {

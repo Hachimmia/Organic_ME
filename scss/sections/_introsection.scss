@@ -4,7 +4,8 @@
 .carousel-item img {
   height: 400px;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
+  //450
   //mobile mode
   .carousel {
     display: none;
@@ -22,13 +23,35 @@
   padding: 8% 0px 0px 8%;
   width: 35vw;
 }
+.overlay-cafe {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  text-align: left;
+  word-wrap: break-word;
+  padding: 8% 5% 0px 8%;
+  width: 40vw;
+}
+@media screen and (max-width: 900px) {
+  .overlay-cafe {
+    padding: 8% 0px 0px 8%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .overlay-cafe {
+    width: 60vw;
+    text-align: center;
+    margin-left: 50px;
+  }
+}
 @media screen and (max-width: 768px) {
   .overlay {
     width: 60vw;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
+  //450
   .overlay {
     text-align: center;
     margin-left: 50px;
@@ -65,7 +88,8 @@
 .img-intro-mobile-carousel {
   display: none;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
+  //450
   .img-intro-mobile-carousel {
     text-align: center;
     display: block;

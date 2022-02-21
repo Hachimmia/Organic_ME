@@ -14,7 +14,8 @@ h2 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
+  //450
   //mobile mode
   .mobile-version-carousel {
     font-family: "Dancing Script", cursive;
