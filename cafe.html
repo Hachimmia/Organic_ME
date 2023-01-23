@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/images/graphics/logo2-SilviaFigliozzi.png">
     <title>Organic ME</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Silvia Figliozzi EC1940906-->
 </head>
 <body>
   <div id="left-body"></div>
@@ -158,56 +159,70 @@
         </div>
       </div>
       <br>
+
+      <!--MENU-->
       <script>
+        /*Create the function for the breakfast menu*/
         function enableBreakfast() {
+          /*create variables for all the buttons and all the part of the menu linked to the html part by id */
           var btnx = document.getElementById("breakfastButton");
           var btny = document.getElementById("lunchMenuButton");
           var btnz = document.getElementById("drinksMenuButton");
           var x = document.getElementById("breakfastMenu");
           var y = document.getElementById("lunchMenu");
           var z = document.getElementById("drinksMenu");
-
+          /*Here I block the var x to display the breakfast menu*/
           x.style.display = "block";
           y.style.display = "none";
           z.style.display = "none";
+          /*Here I set the purple color of the button linked to the breackfast menu*/
           btnx.style.color = "purple";
           btny.style.color = "black";
           btnz.style.color = "black";
         }
 
+        /*Create the function for the lunch menu*/
         function enableLunch() {
+          /*Write the same variables as above*/
           var btnx = document.getElementById("breakfastButton");
           var btny = document.getElementById("lunchMenuButton");
           var btnz = document.getElementById("drinksMenuButton");
           var x = document.getElementById("breakfastMenu");
           var y = document.getElementById("lunchMenu");
           var z = document.getElementById("drinksMenu");
-
+          /*Here I block the var y to display the lunch menu*/
           x.style.display = "none";
           y.style.display = "block";
           z.style.display = "none";
+          /*Here I set the purple color of the button linked to the lunch menu*/
           btnx.style.color = "black";
           btny.style.color = "purple";
           btnz.style.color = "black";
         }
+
+        /*Create the function for the drinks menu*/
         function enableDrinks() {
+          /*Write the same variables as above*/
           var btn = document.getElementById("breakfastButton");
           var btny = document.getElementById("lunchMenuButton");
           var btnz = document.getElementById("drinksMenuButton");
           var x = document.getElementById("breakfastMenu");
           var y = document.getElementById("lunchMenu");
           var z = document.getElementById("drinksMenu");
-
+           /*Here I block the var z to display the drinks menu*/
           x.style.display = "none";
           y.style.display = "none";
           z.style.display = "block";
+          /*Here I set the purple color of the button linked to the drinks menu*/
           btn.style.color = "black";
           btny.style.color = "black";
           btnz.style.color = "purple";
         }
-
+        /*Start with breakfast menu*/
         enableBreakfast();
       </script> 
+
+      
       <!--Loyalty card-->
       <div class="container">
         <div class="text-img">

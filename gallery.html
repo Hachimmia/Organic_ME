@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/images/graphics/logo2-SilviaFigliozzi.png">
     <title>Organic ME</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Silvia Figliozzi EC1940906-->
 </head>
 <body>
   <div id="left-body"></div>
@@ -77,9 +78,50 @@
         <div class="container btnBackAlone">   
           <button class="btn btn-outline-success btnMargin" onclick="location.href='#'">Go Back</button>
         </div>
+
+
+        <!--LIGHTBOX-->
+        <script>
+          /*create the const variable for lightbox*/
+          const lightbox = document.createElement('div')
+          /*I create id to select easly the lightbox in the css*/
+          lightbox.id = 'lightbox'
+          /*to append the lightbox at the end of the body*/
+          document.body.appendChild(lightbox)
+
+          /*to return a list of all the img in the document*/
+          const images = document.querySelectorAll('img')
+          /*forEach calls function for each image in the array*/
+          images.forEach(image => {
+            /*everytime we click we run the code inside here*/
+            image.addEventListener('click', e => {
+              /*So everytime we click on an image it makes the lightbox active */
+              lightbox.classList.add('active')
+              /*const variable img to add images to the lightbox*/
+              const img = document.createElement('img')
+              /*In this way the new img is the same of the current image*/
+              img.src = image.src
+              /*using while to show only one image per time in the lightbox*/
+              while (lightbox.firstChild) {
+                lightbox.removeChild(lightbox.firstChild)
+              }
+              /*to append the image to the lightbox*/
+              lightbox.appendChild(img)
+            })
+          })
+          lightbox.addEventListener('click', e => {
+            /*This "if" check the thing where we click on, so if we click on a thing that is not equal to the current target then we return. So if we don't click on the lightbox we return back */
+            if (e.target !== e.currentTarget) return
+            /*in this way if we click away we remove the lightbox (hidding it)*/
+            lightbox.classList.remove('active')
+          })
+        </script>
+
+
       </div>
     </div>
   </div>
+
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-light text-muted footer">
     <!-- Section: Links  -->

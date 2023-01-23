@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="/images/graphics/logo2-SilviaFigliozzi.png">
     <title>Organic ME</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Silvia Figliozzi EC1940906-->
 </head>
 <body>
   <div id="left-body"></div>
@@ -87,10 +88,81 @@
             
             Course will run 10am till 4pm<br>
             <b>£30.00 per person</b><br>
-            If you are interested <a style="text-decoration:underline; color:#86a614;" href="contactUs.html" target="_blank">contact us!</a>
-            </p>
+            <b>£20.00 kids under 18y/o</b><br>
+            If you are interested <a style="text-decoration:underline; color:#86a614;" href="contactUs.html" target="_blank">contact us!</a></p><br>
+            <p style="text-align:center"><strong><b>Subscribe to our newsletter below, you will receive a 20% off!</b></strong><br>
+            Calculate the total cost of the course below:</p>
+            <div class="container" style="text-align:center" id="cost">
+              <p style="display: inline-block;
+              padding-right: 10px;">Adults</p>
+              <select id="adults">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br>
+              <p style="display: inline-block;
+              padding-right: 25px;">Kids</p>
+              <select id="kids">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <br>
+              <p style="display: inline-block;
+              padding-right: 25px;">Are you subscribed?</p>
+              <select id="discount">
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+              </select>
+              <br>
+              <button class="btn btn-success" type="button" onclick="TotalCost()">Calculate</button>
+
+              <!--Calculation-->
+              <script> 
+              /*Create the function to calculate the cost*/
+              function TotalCost(){
+                /*create variables for adults, kids and discount*/
+                var adults = document.getElementById("adults").value
+                var kids = document.getElementById("kids").value
+                var discount = document.getElementById("discount").value
+
+                /*variable to calculate the cost*/
+                var Total = 30*adults + 20*kids;
+                /*I used "if" to determinate if the user is allowed to use the discount*/
+                if (discount == 0 ) {
+                  /*in case the value is 0 it means that the user is subscribed and can use the discount so I calculate the total cost with the discount*/
+                  var totalDisc = Total *0.8;
+                  /*Show the total cost to the user*/
+                  alert("The total cost of your course is £" + totalDisc)
+                }
+                else {
+                  /*if the value is different from 0, the total cost is calculated without the discount, so using the "Total" variable*/
+                  alert("The total cost of your course is £" + Total)
+                }
+              }
+              </script>
+
+
+            </div>        
+          </div> 
         </div>
-      </div>
       <!--Newsletter-->
       <div class="subheader">
         <span class="leaves">
