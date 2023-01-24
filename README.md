@@ -1,9 +1,9 @@
 # Organic_ME
 
-Organic ME is my first project in HND web development course at Edinburgh College in 2022.
+Organic ME is my first project in the HND web development course at Edinburgh College in 2022.
 
-It is about creating a website for a cafè in the Scottish Borders. 
-I made all the graphics in background, logo and the code part.
+It is about creating a website for a café in the Scottish Borders. 
+I made all the graphics in the background, logo, and code part.
 
 For building this project I used:
 
